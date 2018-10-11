@@ -32,7 +32,7 @@ function handleBartenders(taps) {
 //get  jonas
 
 function bartenders(bartenders) {
-  // get bartenders names
+  // get bartenders names, state, witch coustumer is serving
   const all = document.querySelectorAll(".bartender");
   all.forEach((div, index) => {
     div.querySelector("h1").textContent = bartenders[index].name;
@@ -45,18 +45,7 @@ function bartenders(bartenders) {
     }
 
     console.log(bartenders[index]);
-
-    /* if (bartenders[index].currentCustomer.beingServed === "true") {
-      div.querySelector(".serving").innerHTML = "coustumer is being served ";
-    } else {
-      div.querySelector(".serving").innerHTML =
-        "coustumer is not being served ";
-    } */
   });
-}
-
-function stateBartenders(bartenders) {
-  //document.querySelector(".stateJ").textContent = bartenders[1].status;
 }
 
 function taskBartenders(bartenders) {
