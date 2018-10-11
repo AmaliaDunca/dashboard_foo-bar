@@ -1,0 +1,31 @@
+body {
+  width: 100vw;
+}
+/*grid*/
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+/* little man */
+#queue {
+  grid-column: 1/-1;
+  height: 128px;
+  background: lightblue;
+}
+
+#qv {
+  background-image: url(svg/people.svg);
+  height: 100px;
+  transition: width 0.5s;
+}
+/* pie chart */
+#pie-chart {
+  background-image: url(/svg/donut_chart.svg);
+
+  background-repeat: no-repeat;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+}
